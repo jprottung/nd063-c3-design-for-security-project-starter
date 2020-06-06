@@ -1,0 +1,8 @@
+
+
+# Identify 2-3 changes that can be made to our environment to prevent an ssh brute force attack from the internet.
+- First you could stop the ssh service running on the instance. Where there is no service you cannot connect
+- Second it is possible to prevent the access to the ssh port, effectively hindering people to connect. This can be done in the Security Group or Access Control Lists (ACL)
+
+# Neither instance should have had access to the secret recipes bucket, in the even that instance API credentials were compromised how could we have prevented access to sensitive data.
+- By designing a least priviledged policy, allowing access only to the people defined in the architecture diagram. By doing this all other access of unwanted personal and instances will be forbidden.

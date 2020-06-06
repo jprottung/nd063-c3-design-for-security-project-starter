@@ -1,0 +1,7 @@
+When looking at the Inspector it becomes clear that the main issue is that all ports are reachable from the public. This could be resolved using a Security Group of Firewall.
+
+In the Config we find a lot of different things connected to the deployed infrastructure:
+- The security groups of the attacker and webserver are to open and ssh is possible -> close port 22 on both security groups
+- RDP is available for the WebAppSG. -> remove RDP Access in Security Group
+- there is no automatic http to https redirect for the load balancer -> add certificates and force https for encrypted connections.
+

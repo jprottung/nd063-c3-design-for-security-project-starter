@@ -1,0 +1,3 @@
+First of all the webserver should not be directly accesible from the public but hidden in the private subnet. Doing this a lot of issues where somebody tries to trick the instance and access data from there can already be avoided.
+
+Second there are no Security Groups attached to the webserver and no Firewall is controlling inbound or outbound traffic. What is not open to the public cannot be exploited. Thus there should be strict enforcements on how to access a machine or service and how not.

@@ -1,0 +1,19 @@
+# Identify tools that will allow you to do the following:
+
+## Scan infrastructure as code templates
+One example is the tool CFRipper (https://github.com/Skyscanner/cfripper). 
+
+### Example vulnerability
+With the rule "EC2SecurityGroupIngressOpenToWorldRule" it can check whether an EC2 is open for the world on ports other than 80 and 443.
+
+##Scan AMI’s or containers for OS vulnerabilities
+One example for scanning Docker containers is the anchore-engine (https://github.com/anchore/anchore-engine).
+
+### Example vulnerability
+You can configure anchore as you want with their policies. One common example is the exposed ports policy, where you can check which ports are getting exposed by your docker image and if those are the ones you want. Thus you can prevent exploits based on malconfigured container images.
+
+##Scan an AWS environment for cloud configuration vulnerabilities
+One example here is the used AWS Security Hub. With this you can check what you do against your own and official third party guidelines.
+
+### Example vulnerability
+Check security groups if they restrict access or not to prevent exposed ports to get used by attackers.

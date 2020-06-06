@@ -1,0 +1,11 @@
+# Describe GuardDuty findings that were detected related to the brute force attack
+- Guard Duty figures that the attack instance is performing ssh brute force attacks
+- Guard Duty figures that the web service instance is the target of the brute force attacks
+- Guard Duty figured that it is the hightes severity fixing the attack instance stopping the attaks.
+
+# Research the AWS Guard Duty documentation page and explain how GuardDuty may have detected this attack - i.e. what was its source of information.
+AWS states a couple of different Sources:
+- AWS CloudTrail event logs
+- VPC Flow logs
+- DNS logs
+In this case it is most probable the VPC Flow log that contains the ssh requests and due to the amount raised an alert.
